@@ -421,36 +421,7 @@
 	<!-- <script defer src="js/bundle.min.js"></script> -->
 
 	<script type="text/javascript" data-type="lazy" data-src="js/bundle.min.js"></script>
-	<script type="text/javascript" id="flying-scripts">
-		// Side Nabar action
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "80vw";
-			document.getElementById("overlay-navbar").style.display = "block";
-			document.getElementById("sidenav-list").style.display = "block";
-		}
-
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-			document.getElementById("app").style.marginLeft = "0";
-			document.getElementById("overlay-navbar").style.display = "none";
-			document.getElementById("sidenav-list").style.display = "none";
-		}
-
-		var dropdown = document.getElementsByClassName("dropdown-btn");
-		var i;
-
-		for (i = 0; i < dropdown.length; i++) {
-			dropdown[i].addEventListener("click", function () {
-				this.classList.toggle("active");
-				var dropdownContent = this.nextElementSibling;
-				if (dropdownContent.style.display === "block") {
-					dropdownContent.style.display = "none";
-				} else {
-					dropdownContent.style.display = "block";
-				}
-			});
-		}
-	</script>
+ 
 	<script type="text/javascript" data-type="lazy" data-src="js/bundle.min.js"></script>
 	<script type="text/javascript" id="flying-scripts">
 		const loadScriptsTimer = setTimeout(loadScripts, 2 * 1000);
